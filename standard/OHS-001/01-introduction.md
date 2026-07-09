@@ -1,9 +1,58 @@
 # 1. Introduction
 
-The Open Housing Standard (OHS) is an open, vendor-neutral standard for homes designed to be durable, accessible, repairable, resilient, energy-conscious and technology-friendly.
+## 1.1 Purpose
 
-The goal of OHS is simple:
+The Open Housing Standard (OHS) defines an open, vendor-neutral
+framework for designing homes that are durable, accessible, repairable,
+and technology-friendly.
 
-> Homes that still work well in 50 years.
+Its purpose is to establish common architectural and technical
+principles that improve long-term quality, reduce lifecycle costs, and
+encourage interoperability.
 
-OHS treats a home as both a physical building and a long-lived technical system. It therefore covers not only architectural principles, but also documentation, maintainability, technical infrastructure and digital assets.
+## 1.2 Vision
+
+> To create homes that remain practical, maintainable, and desirable for
+> generations.
+
+## 1.3 Mission
+
+-   Establish an open housing specification.
+-   Promote long-term durability.
+-   Encourage universal accessibility.
+-   Support repairability.
+-   Enable local-first technology.
+-   Foster an open ecosystem.
+
+## 1.4 Guiding Philosophy
+
+Homes should be designed as long-lived infrastructure rather than
+disposable consumer products.
+
+## 1.5 Goals
+
+-   Vendor-neutral standard
+-   Long-term quality
+-   Accessibility
+-   Repairability
+-   Open documentation
+-   BIM interoperability
+-   Reference house designs
+-   Open tooling
+
+## 1.6 Non-Goals
+
+OHS does not replace building regulations or professional engineering.
+
+## 1.7 Design Lifetime
+
+Target design lifetime: **100 years or more**.
+
+## 1.8 Audience
+
+Architects, engineers, builders, software developers, educators and
+homeowners.
+
+## 1.9 Relationship to Other Standards
+
+OHS complements existing standards rather than replacing them.
