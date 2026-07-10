@@ -1,40 +1,91 @@
 site_name: Open Housing Standard
-site_description: An open, vendor-neutral housing standard for durable, accessible and technology-friendly homes.
+site_description: Open, vendor-neutral housing standards and reference designs
 repo_url: https://github.com/OpenHousingStandard/open-housing-standard
+repo_name: OpenHousingStandard/open-housing-standard
+
+docs_dir: docs/generated
+site_dir: site
 
 theme:
   name: material
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
 
 nav:
-  - Home: README.md
-  - Architecture: ARCHITECTURE.md
-  - Standards:
-      - Overview: standard/README.md
-      - OHS-001 Open Housing Standard:
-          - Overview: standard/OHS-001/README.md
-          - Introduction: standard/OHS-001/01-introduction.md
-          - Scope: standard/OHS-001/02-scope.md
-          - Normative References: standard/OHS-001/03-normative-references.md
-          - Terminology: standard/OHS-001/04-terminology.md
-          - Design Principles: standard/OHS-001/05-design-principles.md
-          - Standard Architecture: standard/OHS-001/06-standard-architecture.md
-          - Conformance: standard/OHS-001/07-conformance.md
-          - Governance: standard/OHS-001/08-governance.md
-          - Versioning: standard/OHS-001/09-versioning.md
-          - Appendix A: standard/OHS-001/appendix-a-rationale.md
-          - Appendix B: standard/OHS-001/appendix-b-citation-format.md
-      - OHS-100 Architectural Rules: standard/OHS-100/README.md
-      - OHS-200 Technical Core: standard/OHS-200/README.md
-      - OHS-300 Universal Design: standard/OHS-300/README.md
-      - OHS-400 Energy & Sustainability: standard/OHS-400/README.md
-      - OHS-500 Documentation & Digital Assets: standard/OHS-500/README.md
-      - OHS-600 Reference Houses: standard/OHS-600/README.md
-      - OHS-700 Compliance & Certification: standard/OHS-700/README.md
-      - OHS-900 Glossary: standard/OHS-900/README.md
-  - Project:
-      - Standards Guide: docs/standards/README.md
-      - ADR-0001: docs/adr/0001-rfc-style-standard-documents.md
+  - Home: index.md
 
-# OHS-000 navigation hint added by bootstrap-ohs-editorial.sh.
-# Move this entry into the curated nav section if required:
-# - OHS-000 Editorial Standard: standard/OHS-000/README.md
+  - Standards:
+      - Overview: standards/README.md
+      - OHS-000 — Editorial Standard:
+          - Overview: standards/OHS-000/README.md
+          - Style: standards/OHS-000/STYLE.md
+          - Specification Template: standards/OHS-000/TEMPLATE.md
+          - Chapter Template: standards/OHS-000/CHAPTER-TEMPLATE.md
+          - Document Lifecycle: standards/OHS-000/DOCUMENT-LIFECYCLE.md
+          - Changelog: standards/OHS-000/CHANGELOG.md
+      - OHS-001 — Open Housing Standard:
+          - Overview: standards/OHS-001/README.md
+          - 1. Introduction: standards/OHS-001/01-introduction.md
+          - 2. Scope: standards/OHS-001/02-scope.md
+          - 3. Normative References: standards/OHS-001/03-normative-references.md
+          - 4. Terminology: standards/OHS-001/04-terminology.md
+          - 5. Design Principles: standards/OHS-001/05-design-principles.md
+          - 6. Standard Architecture: standards/OHS-001/06-standard-architecture.md
+          - 7. Conformance: standards/OHS-001/07-conformance.md
+          - 8. Governance: standards/OHS-001/08-governance.md
+          - 9. Versioning: standards/OHS-001/09-versioning.md
+          - Appendix A: standards/OHS-001/appendix-a.md
+          - Appendix B: standards/OHS-001/appendix-b.md
+      - OHS-100 — Architectural Rules: standards/OHS-100/README.md
+      - OHS-200 — Technical Core: standards/OHS-200/README.md
+      - OHS-300 — Universal Design: standards/OHS-300/README.md
+      - OHS-400 — Energy & Sustainability: standards/OHS-400/README.md
+      - OHS-500 — Documentation & Digital Assets: standards/OHS-500/README.md
+      - OHS-600 — Reference Houses: standards/OHS-600/README.md
+      - OHS-700 — Compliance & Certification: standards/OHS-700/README.md
+      - OHS-900 — Glossary: standards/OHS-900/README.md
+
+  - Reference Houses:
+      - Overview: reference-houses/README.md
+      - OH90: reference-houses/oh90/README.md
+      - OH120: reference-houses/oh120/README.md
+      - OH150: reference-houses/oh150/README.md
+
+  - ADRs:
+      - Index: adr/index.md
+      - ADR-0001 — Open Formats: adr/0001-open-formats.md
+      - ADR-0002 — RFC-style Documents: adr/0002-rfc-style-standard-documents.md
+      - ADR-0003 — Three Reference Sizes: adr/0003-three-reference-sizes.md
+      - ADR-0004 — Editorial Standard: adr/0004-editorial-standard.md
+
+  - Project:
+      - Architecture: project/architecture.md
+      - Charter: project/charter.md
+      - Design Philosophy: project/design-philosophy.md
+      - Tenets: project/tenets.md
+      - Non-goals: project/non-goals.md
+      - Decisions: project/decisions.md
+      - Roadmap: project/roadmap.md
+      - Repository Map: project/repository-map.md
+      - Technology Stack: project/tech-stack.md
+      - Disclaimer: project/disclaimer.md
+
+  - Workflows:
+      - Open Design Workflow: workflows/open-design-workflow.md
+
+  - Checklists:
+      - Design Checklist: checklists/design-checklist.md
+      - Handover Documentation: checklists/handover-documentation.md

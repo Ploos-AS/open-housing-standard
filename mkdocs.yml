@@ -2,90 +2,133 @@ site_name: Open Housing Standard
 site_description: Open, vendor-neutral housing standards and reference designs
 repo_url: https://github.com/OpenHousingStandard/open-housing-standard
 repo_name: OpenHousingStandard/open-housing-standard
-
 docs_dir: docs/generated
 site_dir: site
-
 theme:
   name: material
   features:
-    - navigation.sections
-    - navigation.indexes
-    - navigation.top
-    - content.code.copy
-
+  - navigation.sections
+  - navigation.indexes
+  - navigation.top
+  - content.code.copy
 markdown_extensions:
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - md_in_html
-  - tables
-  - toc:
-      permalink: true
-
+- admonition
+- attr_list
+- def_list
+- footnotes
+- md_in_html
+- tables
+- toc:
+    permalink: true
 nav:
-  - Home: index.md
-
-  - Standards:
-      - Overview: standards/README.md
-      - OHS-000 — Editorial Standard:
-          - Overview: standards/OHS-000/README.md
-          - Style: standards/OHS-000/STYLE.md
-          - Specification Template: standards/OHS-000/TEMPLATE.md
-          - Chapter Template: standards/OHS-000/CHAPTER-TEMPLATE.md
-          - Document Lifecycle: standards/OHS-000/DOCUMENT-LIFECYCLE.md
-          - Changelog: standards/OHS-000/CHANGELOG.md
-      - OHS-001 — Open Housing Standard:
-          - Overview: standards/OHS-001/README.md
-          - 1. Introduction: standards/OHS-001/01-introduction.md
-          - 2. Scope: standards/OHS-001/02-scope.md
-          - 3. Normative References: standards/OHS-001/03-normative-references.md
-          - 4. Terminology: standards/OHS-001/04-terminology.md
-          - 5. Design Principles: standards/OHS-001/05-design-principles.md
-          - 6. Standard Architecture: standards/OHS-001/06-standard-architecture.md
-          - 7. Conformance: standards/OHS-001/07-conformance.md
-          - 8. Governance: standards/OHS-001/08-governance.md
-          - 9. Versioning: standards/OHS-001/09-versioning.md
-          - Appendix A: standards/OHS-001/appendix-a.md
-          - Appendix B: standards/OHS-001/appendix-b.md
-      - OHS-100 — Architectural Rules: standards/OHS-100/README.md
-      - OHS-200 — Technical Core: standards/OHS-200/README.md
-      - OHS-300 — Universal Design: standards/OHS-300/README.md
-      - OHS-400 — Energy & Sustainability: standards/OHS-400/README.md
-      - OHS-500 — Documentation & Digital Assets: standards/OHS-500/README.md
-      - OHS-600 — Reference Houses: standards/OHS-600/README.md
-      - OHS-700 — Compliance & Certification: standards/OHS-700/README.md
-      - OHS-900 — Glossary: standards/OHS-900/README.md
-
-  - Reference Houses:
-      - Overview: reference-houses/README.md
-      - OH90: reference-houses/oh90/README.md
-      - OH120: reference-houses/oh120/README.md
-      - OH150: reference-houses/oh150/README.md
-
-  - ADRs:
-      - Index: adr/index.md
-      - ADR-0001 — Open Formats: adr/0001-open-formats.md
-      - ADR-0002 — RFC-style Documents: adr/0002-rfc-style-standard-documents.md
-      - ADR-0003 — Three Reference Sizes: adr/0003-three-reference-sizes.md
-      - ADR-0004 — Editorial Standard: adr/0004-editorial-standard.md
-
-  - Project:
-      - Architecture: project/architecture.md
-      - Charter: project/charter.md
-      - Design Philosophy: project/design-philosophy.md
-      - Tenets: project/tenets.md
-      - Non-goals: project/non-goals.md
-      - Decisions: project/decisions.md
-      - Roadmap: project/roadmap.md
-      - Repository Map: project/repository-map.md
-      - Technology Stack: project/tech-stack.md
-      - Disclaimer: project/disclaimer.md
-
-  - Workflows:
-      - Open Design Workflow: workflows/open-design-workflow.md
-
-  - Checklists:
-      - Design Checklist: checklists/design-checklist.md
-      - Handover Documentation: checklists/handover-documentation.md
+- Home: index.md
+- Standards:
+  - OHS Open Toolchain: standards/appendices/toolchain.md
+  - Changelog: standards/ohs-000/changelog.md
+  - N. Chapter Title: standards/ohs-000/chapter-template.md
+  - OHS Document Lifecycle: standards/ohs-000/document-lifecycle.md
+  - OHS-000: standards/ohs-000/readme.md
+  - OHS Editorial Style: standards/ohs-000/style.md
+  - OHS-XYZ — Specification Title: standards/ohs-000/template.md
+  - 1. Introduction: standards/ohs-001/01-introduction.md
+  - 2. Scope: standards/ohs-001/02-scope.md
+  - 3. Normative References: standards/ohs-001/03-normative-references.md
+  - 4. Terminology: standards/ohs-001/04-terminology.md
+  - 5. Design Principles: standards/ohs-001/05-design-principles.md
+  - 6. Standard Architecture: standards/ohs-001/06-standard-architecture.md
+  - 7. Conformance: standards/ohs-001/07-conformance.md
+  - 8. Governance: standards/ohs-001/08-governance.md
+  - 9. Versioning: standards/ohs-001/09-versioning.md
+  - Appendix A: standards/ohs-001/appendix-a.md
+  - Appendix B: standards/ohs-001/appendix-b.md
+  - Changelog — OHS-001: standards/ohs-001/changelog.md
+  - OHS-001 --- Open Housing Standard: standards/ohs-001/readme.md
+  - 1. Introduction: standards/ohs-100/01-introduction.md
+  - 2. Scope: standards/ohs-100/02-scope.md
+  - 3. Requirements: standards/ohs-100/03-requirements.md
+  - 4. Conformance: standards/ohs-100/04-conformance.md
+  - 'Appendix A: Rationale': standards/ohs-100/appendix-a-rationale.md
+  - 'OHS-100: Architectural Rules': standards/ohs-100/readme.md
+  - 1. Introduction: standards/ohs-200/01-introduction.md
+  - 2. Scope: standards/ohs-200/02-scope.md
+  - 3. Requirements: standards/ohs-200/03-requirements.md
+  - 4. Conformance: standards/ohs-200/04-conformance.md
+  - 'Appendix A: Rationale': standards/ohs-200/appendix-a-rationale.md
+  - 'OHS-200: Technical Core': standards/ohs-200/readme.md
+  - 1. Introduction: standards/ohs-300/01-introduction.md
+  - 2. Scope: standards/ohs-300/02-scope.md
+  - 3. Requirements: standards/ohs-300/03-requirements.md
+  - 4. Conformance: standards/ohs-300/04-conformance.md
+  - 'Appendix A: Rationale': standards/ohs-300/appendix-a-rationale.md
+  - 'OHS-300: Universal Design': standards/ohs-300/readme.md
+  - 1. Introduction: standards/ohs-400/01-introduction.md
+  - 2. Scope: standards/ohs-400/02-scope.md
+  - 3. Requirements: standards/ohs-400/03-requirements.md
+  - 4. Conformance: standards/ohs-400/04-conformance.md
+  - 'Appendix A: Rationale': standards/ohs-400/appendix-a-rationale.md
+  - 'OHS-400: Energy & Sustainability': standards/ohs-400/readme.md
+  - 1. Introduction: standards/ohs-500/01-introduction.md
+  - 2. Scope: standards/ohs-500/02-scope.md
+  - 3. Requirements: standards/ohs-500/03-requirements.md
+  - 4. Conformance: standards/ohs-500/04-conformance.md
+  - 'Appendix A: Rationale': standards/ohs-500/appendix-a-rationale.md
+  - 'OHS-500: Documentation & Digital Assets': standards/ohs-500/readme.md
+  - 1. Introduction: standards/ohs-600/01-introduction.md
+  - 2. Scope: standards/ohs-600/02-scope.md
+  - 3. Requirements: standards/ohs-600/03-requirements.md
+  - 4. Conformance: standards/ohs-600/04-conformance.md
+  - 'Appendix A: Rationale': standards/ohs-600/appendix-a-rationale.md
+  - 'OHS-600: Reference House Requirements': standards/ohs-600/readme.md
+  - 1. Introduction: standards/ohs-700/01-introduction.md
+  - 2. Scope: standards/ohs-700/02-scope.md
+  - 3. Requirements: standards/ohs-700/03-requirements.md
+  - 4. Conformance: standards/ohs-700/04-conformance.md
+  - 'Appendix A: Rationale': standards/ohs-700/appendix-a-rationale.md
+  - 'OHS-700: Compliance & Certification': standards/ohs-700/readme.md
+  - 1. Introduction: standards/ohs-900/01-introduction.md
+  - 2. Scope: standards/ohs-900/02-scope.md
+  - 3. Requirements: standards/ohs-900/03-requirements.md
+  - 4. Conformance: standards/ohs-900/04-conformance.md
+  - 'Appendix A: Rationale': standards/ohs-900/appendix-a-rationale.md
+  - 'OHS-900: Glossary': standards/ohs-900/readme.md
+  - Open Housing Standard Documents: standards/readme.md
+- Reference Houses:
+  - Ousdal Hus 120: reference-houses/oh120/docs/generated-report.md
+  - Ousdal Hus 120: reference-houses/oh120/docs/overview.md
+  - Ousdal Hus 120: reference-houses/oh120/docs/specification.md
+  - Ousdal Hus 120: reference-houses/oh120/readme.md
+  - Ousdal Hus 150: reference-houses/oh150/docs/generated-report.md
+  - Ousdal Hus 150: reference-houses/oh150/docs/overview.md
+  - Ousdal Hus 150: reference-houses/oh150/docs/specification.md
+  - Ousdal Hus 150: reference-houses/oh150/readme.md
+  - Ousdal Hus 90: reference-houses/oh90/docs/generated-report.md
+  - Ousdal Hus 90: reference-houses/oh90/docs/overview.md
+  - Ousdal Hus 90: reference-houses/oh90/docs/specification.md
+  - Ousdal Hus 90: reference-houses/oh90/readme.md
+  - Reference Houses: reference-houses/readme.md
+- Architecture Decision Records:
+  - 'ADR-0001: Use open formats': adr/0001-open-formats.md
+  - 'ADR-0001: RFC-style standard documents': adr/0002-rfc-style-standard-documents.md
+  - 'ADR-0002: Use three reference sizes': adr/0003-three-reference-sizes.md
+  - 'ADR-0004: Adopt OHS-000 as the Editorial Standard': adr/0004-editorial-standard.md
+  - Architecture Decision Records: adr/index.md
+- Project:
+  - Architecture: project/architecture.md
+  - Charter: project/charter.md
+  - Decisions: project/decisions.md
+  - Design Philosophy: project/design-philosophy.md
+  - Disclaimer: project/disclaimer.md
+  - 'Milestone: OHS-000 Draft': project/milestones/ohs-000-draft.md
+  - 'Milestone: OHS-001 Draft': project/milestones/ohs-001-draft.md
+  - Non Goals: project/non-goals.md
+  - Project Documents: project/readme.md
+  - Ousdal Hus Options: project/reference-options.md
+  - Repository Map: project/repository-map.md
+  - Roadmap: project/roadmap.md
+  - Technology Stack: project/tech-stack.md
+  - Tenets: project/tenets.md
+- Workflows:
+  - Open Design Workflow: workflows/open-design-workflow.md
+- Checklists:
+  - Design Checklist: checklists/design-checklist.md
+  - Handover Documentation Checklist: checklists/handover-documentation.md
