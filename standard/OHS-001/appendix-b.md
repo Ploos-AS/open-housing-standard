@@ -212,7 +212,7 @@ Whenever practical, include the ADR title.
 Example:
 
 ```
-ADR-0003 — Three Reference House Sizes
+ADR-0003: Use three reference sizes
 ```
 
 ---
