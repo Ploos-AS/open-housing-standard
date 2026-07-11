@@ -1,3 +1,29 @@
+---
+Document ID: OHS-001
+Title: Open Housing Standard
+Chapter: 9 — Versioning
+Version: 1.0.0-draft.1
+Status: Draft
+Category: Core Specification
+Normative: 'Yes'
+Depends On:
+- OHS-000
+Referenced By:
+- OHS-100
+- OHS-200
+- OHS-300
+- OHS-400
+- OHS-500
+- OHS-600
+- OHS-700
+- OHS-900
+Publisher: Open Housing Standard
+License: CC BY-SA 4.0
+Language: English
+Last Updated: '2026-07-11'
+Next Review: Before 1.0.0-rc.1
+---
+
 # 9. Versioning
 
 **Status:** Draft
@@ -6,7 +32,7 @@
 
 ---
 
-# 9.1 Purpose
+## 9.1 Purpose
 
 This section defines the versioning model used by all Open Housing Standard (OHS) specifications.
 
@@ -16,7 +42,7 @@ Unless explicitly stated otherwise, every published OHS specification SHALL foll
 
 ---
 
-# 9.2 Version Number
+## 9.2 Version Number
 
 Every OHS specification SHALL use Semantic Versioning.
 
@@ -37,7 +63,7 @@ Example:
 
 ---
 
-# 9.3 Major Version
+## 9.3 Major Version
 
 A new MAJOR version SHALL be published whenever one or more of the following occur:
 
@@ -50,7 +76,7 @@ Implementations conforming to different MAJOR versions SHALL NOT automatically b
 
 ---
 
-# 9.4 Minor Version
+## 9.4 Minor Version
 
 A new MINOR version SHALL be published when:
 
@@ -63,7 +89,7 @@ Minor versions SHOULD remain backward compatible.
 
 ---
 
-# 9.5 Patch Version
+## 9.5 Patch Version
 
 A PATCH version SHALL contain only:
 
@@ -77,7 +103,7 @@ Patch versions SHALL NOT introduce new normative requirements.
 
 ---
 
-# 9.6 Specification Status
+## 9.6 Specification Status
 
 Every published specification SHALL declare exactly one publication status.
 
@@ -143,7 +169,7 @@ Historical specifications SHALL NOT be used as the basis for new implementations
 
 ---
 
-# 9.7 Conformance Claims
+## 9.7 Conformance Claims
 
 Conformance claims SHALL identify the exact specification version.
 
@@ -163,7 +189,7 @@ because it does not identify a specific specification or version.
 
 ---
 
-# 9.8 Backward Compatibility
+## 9.8 Backward Compatibility
 
 Backward compatibility SHOULD be maintained whenever practical.
 
@@ -173,7 +199,7 @@ Editorial improvements SHALL NOT invalidate existing conforming implementations.
 
 ---
 
-# 9.9 Publication
+## 9.9 Publication
 
 Every published version SHALL receive:
 
@@ -186,7 +212,7 @@ Published versions SHALL remain permanently available.
 
 ---
 
-# 9.10 Change Log
+## 9.10 Change Log
 
 Every specification SHALL include a change history.
 
@@ -198,7 +224,7 @@ The change history SHALL distinguish between:
 
 ---
 
-# 9.11 Deprecation
+## 9.11 Deprecation
 
 When a specification is deprecated, the following SHALL be documented:
 
@@ -209,7 +235,7 @@ When a specification is deprecated, the following SHALL be documented:
 
 ---
 
-# 9.12 Citation
+## 9.12 Citation
 
 References to OHS specifications SHOULD include:
 
@@ -226,7 +252,7 @@ OHS-001 Version 1.0.0 (2026).
 
 ---
 
-# 9.13 Repository
+## 9.13 Repository
 
 The official Open Housing Standard Git repository SHALL constitute the authoritative development source.
 
@@ -236,7 +262,7 @@ When differences exist between repository drafts and published releases, the pub
 
 ---
 
-# 9.14 Future Revisions
+## 9.14 Future Revisions
 
 Future revisions of this versioning model SHALL themselves follow the governance process defined by OHS-001.
 

@@ -1,10 +1,36 @@
+---
+Document ID: OHS-001
+Title: Open Housing Standard
+Chapter: 8 — Governance
+Version: 1.0.0-draft.1
+Status: Draft
+Category: Core Specification
+Normative: 'Yes'
+Depends On:
+- OHS-000
+Referenced By:
+- OHS-100
+- OHS-200
+- OHS-300
+- OHS-400
+- OHS-500
+- OHS-600
+- OHS-700
+- OHS-900
+Publisher: Open Housing Standard
+License: CC BY-SA 4.0
+Language: English
+Last Updated: '2026-07-11'
+Next Review: Before 1.0.0-rc.1
+---
+
 # 8. Governance
 
 **Normative**
 
 ---
 
-# 8.1 Purpose
+## 8.1 Purpose
 
 This section defines the governance model for the Open Housing Standard (OHS).
 
@@ -12,7 +38,7 @@ The purpose of the governance model is to ensure that OHS remains open, technica
 
 ---
 
-# 8.2 Openness
+## 8.2 Openness
 
 All normative discussions SHALL be conducted in public.
 
@@ -20,7 +46,7 @@ Meeting minutes, design discussions, and accepted decisions SHOULD be publicly a
 
 ---
 
-# 8.3 Participation
+## 8.3 Participation
 
 Any individual or organization MAY propose improvements to an OHS specification.
 
@@ -28,7 +54,7 @@ Participation SHALL NOT require membership fees or commercial affiliation.
 
 ---
 
-# 8.4 Proposals
+## 8.4 Proposals
 
 Normative changes SHALL be proposed through the project's documented contribution process.
 
@@ -41,7 +67,7 @@ Each proposal SHALL:
 
 ---
 
-# 8.5 Architectural Decisions
+## 8.5 Architectural Decisions
 
 Changes affecting the architecture of OHS SHALL be documented as Architecture Decision Records (ADRs).
 
@@ -49,7 +75,7 @@ Accepted ADRs become part of the permanent project history.
 
 ---
 
-# 8.6 Consensus
+## 8.6 Consensus
 
 Normative changes SHOULD be accepted through rough consensus.
 
@@ -62,7 +88,7 @@ When consensus cannot be reached, project maintainers SHALL make the final decis
 
 ---
 
-# 8.7 Transparency
+## 8.7 Transparency
 
 All accepted normative changes SHALL be traceable.
 
@@ -75,7 +101,7 @@ The following SHALL be publicly available:
 
 ---
 
-# 8.8 Backward Compatibility
+## 8.8 Backward Compatibility
 
 Published standards SHOULD remain backward compatible whenever practical.
 
@@ -83,7 +109,7 @@ Breaking normative changes SHALL require a new major version.
 
 ---
 
-# 8.9 Editorial Changes
+## 8.9 Editorial Changes
 
 Editorial improvements MAY be accepted without changing normative behavior.
 
@@ -91,7 +117,7 @@ Editorial corrections SHALL NOT change conformance requirements.
 
 ---
 
-# 8.10 Conflicts of Interest
+## 8.10 Conflicts of Interest
 
 Participants SHOULD disclose conflicts of interest when proposing normative changes.
 
@@ -99,7 +125,7 @@ Technical decisions SHALL prioritize the objectives of OHS rather than commercia
 
 ---
 
-# 8.11 Intellectual Property
+## 8.11 Intellectual Property
 
 Contributions SHALL be compatible with the licensing model of the Open Housing Standard project.
 
@@ -107,7 +133,7 @@ Normative specifications SHALL remain freely available.
 
 ---
 
-# 8.12 Repository
+## 8.12 Repository
 
 The official Git repository SHALL constitute the authoritative source for all OHS specifications.
 
@@ -115,7 +141,7 @@ Published releases define normative versions.
 
 ---
 
-# 8.13 Appeals
+## 8.13 Appeals
 
 Any participant MAY request reconsideration of an accepted decision.
 
@@ -125,7 +151,7 @@ Project maintainers SHALL review appeals in a transparent manner.
 
 ---
 
-# 8.14 Governance Evolution
+## 8.14 Governance Evolution
 
 The governance model MAY evolve over time.
 

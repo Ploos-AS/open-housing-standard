@@ -1,3 +1,29 @@
+---
+Document ID: OHS-001
+Title: Open Housing Standard
+Chapter: Appendix A — Design Rationale
+Version: 1.0.0-draft.1
+Status: Draft
+Category: Core Specification
+Normative: 'No'
+Depends On:
+- OHS-000
+Referenced By:
+- OHS-100
+- OHS-200
+- OHS-300
+- OHS-400
+- OHS-500
+- OHS-600
+- OHS-700
+- OHS-900
+Publisher: Open Housing Standard
+License: CC BY-SA 4.0
+Language: English
+Last Updated: '2026-07-11'
+Next Review: Before 1.0.0-rc.1
+---
+
 # Appendix A — Design Rationale
 
 **Status:** Draft
@@ -6,7 +32,7 @@
 
 ---
 
-# A.1 Purpose
+## A.1 Purpose
 
 This appendix explains the rationale behind the design principles of the Open Housing Standard (OHS).
 
@@ -14,7 +40,7 @@ It is informative and does not define normative requirements.
 
 ---
 
-# A.2 Long Service Life
+## A.2 Long Service Life
 
 OHS assumes that residential buildings should remain useful for multiple generations.
 
@@ -24,7 +50,7 @@ The objective is not merely to maximize structural lifetime, but to ensure that 
 
 ---
 
-# A.3 Open Standards
+## A.3 Open Standards
 
 Buildings typically outlive the companies that design them, the software used to model them, and the technologies installed within them.
 
@@ -34,7 +60,7 @@ Open standards reduce vendor lock-in, improve interoperability, and increase the
 
 ---
 
-# A.4 Vendor Neutrality
+## A.4 Vendor Neutrality
 
 The purpose of OHS is to describe *what* should be achieved rather than *which* products should be used.
 
@@ -44,7 +70,7 @@ Vendor neutrality encourages competition, innovation, and long-term maintainabil
 
 ---
 
-# A.5 Repairability
+## A.5 Repairability
 
 Buildings inevitably require maintenance.
 
@@ -54,7 +80,7 @@ Repairability contributes directly to sustainability by extending the useful lif
 
 ---
 
-# A.6 Adaptability
+## A.6 Adaptability
 
 The needs of occupants change over time.
 
@@ -66,7 +92,7 @@ Adaptability extends the useful life of a dwelling while reducing lifecycle cost
 
 ---
 
-# A.7 Technical Separation
+## A.7 Technical Separation
 
 Mechanical, electrical, plumbing, communication, and automation systems typically evolve much faster than the structural building envelope.
 
@@ -76,7 +102,7 @@ The concept of a Technical Core supports this objective.
 
 ---
 
-# A.8 Documentation
+## A.8 Documentation
 
 Future owners should not have to rediscover how a building was designed.
 
@@ -86,7 +112,7 @@ Documentation is therefore considered an essential part of the building rather t
 
 ---
 
-# A.9 Accessibility
+## A.9 Accessibility
 
 Accessibility benefits everyone.
 
@@ -96,7 +122,7 @@ Features originally intended for accessibility frequently provide broader long-t
 
 ---
 
-# A.10 Sustainability
+## A.10 Sustainability
 
 OHS views sustainability primarily as longevity.
 
@@ -106,7 +132,7 @@ Repairability, adaptability, and durability are therefore considered key sustain
 
 ---
 
-# A.11 Interoperability
+## A.11 Interoperability
 
 Buildings increasingly contain software, digital models, sensors, automation systems, and communication infrastructure.
 
@@ -116,7 +142,7 @@ Interoperability also supports independent implementation by multiple vendors.
 
 ---
 
-# A.12 Future Readiness
+## A.12 Future Readiness
 
 No standard can predict future technologies.
 
@@ -126,7 +152,7 @@ Providing spare capacity, accessible service routes, modular building services, 
 
 ---
 
-# A.13 Simplicity
+## A.13 Simplicity
 
 Whenever multiple solutions satisfy the same objective, OHS generally favors the simpler solution.
 
@@ -134,7 +160,7 @@ Simplicity reduces construction complexity, maintenance effort, lifecycle cost, 
 
 ---
 
-# A.14 Human-Centred Design
+## A.14 Human-Centred Design
 
 Buildings exist for people.
 
@@ -144,7 +170,7 @@ Throughout OHS, human usability takes precedence over technological novelty.
 
 ---
 
-# A.15 Continuous Improvement
+## A.15 Continuous Improvement
 
 The Open Housing Standard is intended to evolve.
 
@@ -154,7 +180,7 @@ This appendix explains the current design philosophy but does not limit future i
 
 ---
 
-# A.16 Philosophy
+## A.16 Philosophy
 
 The Open Housing Standard is founded on a simple premise:
 

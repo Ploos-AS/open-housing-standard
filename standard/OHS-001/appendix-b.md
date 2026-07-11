@@ -1,3 +1,29 @@
+---
+Document ID: OHS-001
+Title: Open Housing Standard
+Chapter: Appendix B — Citation and Referencing
+Version: 1.0.0-draft.1
+Status: Draft
+Category: Core Specification
+Normative: 'No'
+Depends On:
+- OHS-000
+Referenced By:
+- OHS-100
+- OHS-200
+- OHS-300
+- OHS-400
+- OHS-500
+- OHS-600
+- OHS-700
+- OHS-900
+Publisher: Open Housing Standard
+License: CC BY-SA 4.0
+Language: English
+Last Updated: '2026-07-11'
+Next Review: Before 1.0.0-rc.1
+---
+
 # Appendix B — Citation and Referencing
 
 **Status:** Draft
@@ -6,7 +32,7 @@
 
 ---
 
-# B.1 Purpose
+## B.1 Purpose
 
 This appendix provides guidance for citing, referencing, and identifying Open Housing Standard (OHS) specifications.
 
@@ -16,7 +42,7 @@ This appendix is informative and does not define conformance requirements.
 
 ---
 
-# B.2 General Principles
+## B.2 General Principles
 
 References to OHS specifications SHOULD include:
 
@@ -29,7 +55,7 @@ Whenever practical, references SHOULD identify the exact version of the specific
 
 ---
 
-# B.3 Standard Identifier
+## B.3 Standard Identifier
 
 Each specification is uniquely identified by its OHS number.
 
@@ -46,7 +72,7 @@ Specification numbers SHALL remain stable once published.
 
 ---
 
-# B.4 Version References
+## B.4 Version References
 
 Version numbers SHOULD always be included.
 
@@ -74,7 +100,7 @@ because they are ambiguous.
 
 ---
 
-# B.5 Publication Status
+## B.5 Publication Status
 
 When referring to unpublished specifications, the publication status SHOULD be included.
 
@@ -92,7 +118,7 @@ OHS-001 Stable
 
 ---
 
-# B.6 Formal Citation
+## B.6 Formal Citation
 
 A formal citation SHOULD contain:
 
@@ -110,7 +136,7 @@ OHS-001 Version 1.0.0 (2026).
 
 ---
 
-# B.7 Repository References
+## B.7 Repository References
 
 Development versions MAY be referenced using repository locations.
 
@@ -128,7 +154,7 @@ Repository references SHALL NOT replace published version references in conforma
 
 ---
 
-# B.8 Referencing Sections
+## B.8 Referencing Sections
 
 References SHOULD identify the specific section whenever practical.
 
@@ -146,7 +172,7 @@ Section references improve precision and reduce ambiguity.
 
 ---
 
-# B.9 Cross References
+## B.9 Cross References
 
 Normative cross references SHOULD identify:
 
@@ -173,7 +199,7 @@ because document titles may evolve.
 
 ---
 
-# B.10 ADR References
+## B.10 ADR References
 
 Architecture Decision Records SHOULD be referenced by ADR number.
 
@@ -197,7 +223,7 @@ ADR-0003 — Three Reference House Sizes
 
 ---
 
-# B.11 Reference Houses
+## B.11 Reference Houses
 
 Reference houses SHOULD be identified using their model identifiers.
 
@@ -223,7 +249,7 @@ The identifier remains stable even if descriptive names change.
 
 ---
 
-# B.12 Reference Implementations
+## B.12 Reference Implementations
 
 Reference implementations SHOULD identify:
 
@@ -241,7 +267,7 @@ Conforms to OHS-001 Version 1.0.0
 
 ---
 
-# B.13 Software Implementations
+## B.13 Software Implementations
 
 Software tools implementing OHS SHOULD declare:
 
@@ -261,7 +287,7 @@ OHS-400 Version 1.2.0
 
 ---
 
-# B.14 Academic References
+## B.14 Academic References
 
 Academic publications SHOULD cite published specifications rather than repository drafts whenever possible.
 
@@ -274,7 +300,7 @@ OHS-001 Version 1.0.0 (2026).
 
 ---
 
-# B.15 Regulatory References
+## B.15 Regulatory References
 
 When OHS specifications are referenced by regulations or contracts, the exact version SHOULD be identified.
 
@@ -289,7 +315,7 @@ This avoids ambiguity if newer versions are published.
 
 ---
 
-# B.16 Change References
+## B.16 Change References
 
 When discussing revisions between versions, references SHOULD identify both versions.
 
@@ -302,7 +328,7 @@ to Version 1.1.0.
 
 ---
 
-# B.17 Permanent References
+## B.17 Permanent References
 
 Published OHS versions SHOULD remain permanently available.
 
@@ -312,7 +338,7 @@ This principle supports long-term documentation and archival stability.
 
 ---
 
-# B.18 Examples
+## B.18 Examples
 
 Examples of recommended references:
 
@@ -345,7 +371,7 @@ These references are ambiguous and may become invalid over time.
 
 ---
 
-# B.19 Persistent Identifiers
+## B.19 Persistent Identifiers
 
 Future published versions of OHS MAY include persistent identifiers such as:
 
@@ -357,7 +383,7 @@ Persistent identifiers improve long-term citation stability.
 
 ---
 
-# B.20 Summary
+## B.20 Summary
 
 Consistent references improve interoperability, traceability, and long-term maintainability.
 
