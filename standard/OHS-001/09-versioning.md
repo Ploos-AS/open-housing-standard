@@ -26,7 +26,6 @@ Next Review: Before 1.0.0-rc.1
 
 # 9. Versioning
 
-
 ## 9.1 Purpose
 
 This section defines the versioning model used by all Open Housing Standard (OHS) specifications.

@@ -26,7 +26,6 @@ Next Review: Before 1.0.0-rc.1
 
 # Appendix B — Citation and Referencing
 
-
 ## B.1 Purpose
 
 This appendix provides guidance for citing, referencing, and identifying Open Housing Standard (OHS) specifications.

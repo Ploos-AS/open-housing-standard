@@ -120,11 +120,11 @@ Durability, repairability, and adaptability SHALL take precedence over short-ter
 
 ---
 
-## 5.13 Safety
+## 5.13 Safety and Regulatory Precedence
 
-Nothing in OHS supersedes applicable laws, regulations, or mandatory building codes.
+OHS does not supersede applicable laws, regulations, or mandatory building codes.
 
-Where conflicts exist, applicable legislation SHALL take precedence.
+Where a conflict exists, applicable legislation SHALL take precedence.
 
 ---
 

@@ -26,7 +26,6 @@ Next Review: Before 1.0.0-rc.1
 
 # 8. Governance
 
-
 ## 8.1 Purpose
 
 This section defines the governance model for the Open Housing Standard (OHS).

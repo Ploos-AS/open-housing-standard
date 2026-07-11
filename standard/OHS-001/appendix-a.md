@@ -26,7 +26,6 @@ Next Review: Before 1.0.0-rc.1
 
 # Appendix A — Design Rationale
 
-
 ## A.1 Purpose
 
 This appendix explains the rationale behind the design principles of the Open Housing Standard (OHS).

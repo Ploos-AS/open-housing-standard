@@ -151,7 +151,7 @@ def normalize_whitespace(text: str) -> str:
     for line in lines:
         if line == "":
             blank_count += 1
-            if blank_count > 2:
+            if blank_count > 1:
                 continue
         else:
             blank_count = 0

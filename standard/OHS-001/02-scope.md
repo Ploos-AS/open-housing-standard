@@ -50,8 +50,9 @@ building.
 
 ## 2.4 Relationship to Building Regulations
 
-Applicable legislation always takes precedence over OHS where conflicts
-exist.
+OHS complements applicable building regulations and does not replace them.
+
+Where OHS conflicts with applicable legislation, the precedence requirement in Section 5.13 applies.
 
 ## 2.5 Intended Implementations
 
