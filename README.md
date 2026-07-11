@@ -4,7 +4,7 @@ Open Housing Standard (OHS) is an open standard for homes designed to be robust,
 
 The goal is simple:
 
-> Homes that still work well in 50 years.
+> Homes designed for a service life of 100 years or more.
 
 OHS focuses on:
 - universal design
