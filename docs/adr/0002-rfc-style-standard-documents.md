@@ -1,4 +1,4 @@
-# ADR-0001: RFC-style standard documents
+# ADR-0002: RFC-style standard documents
 
 ## Status
 

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 import argparse
 import shutil
 from dataclasses import dataclass, field
@@ -326,15 +327,44 @@ core specification.
     def update_adr_index(self) -> None:
         area = "ADR"
         directory = self.root / "docs" / "adr"
+
         if not directory.exists():
             self.report.error(area, "docs/adr is missing.")
             return
 
         adr_files = sorted(directory.glob("[0-9][0-9][0-9][0-9]-*.md"))
         entries: list[str] = []
+        numbering_errors = False
 
         for path in adr_files:
+            filename_number = path.name[:4]
             title = self._first_heading(path)
+            match = re.match(r"ADR-(\d{4})\b", title)
+
+            if match is None:
+                numbering_errors = True
+                self.report.error(
+                    area,
+                    f"{self.rel(path)} has no valid ADR number in its heading.",
+                )
+            elif match.group(1) != filename_number:
+                numbering_errors = True
+                self.report.error(
+                    area,
+                    f"{self.rel(path)} heading uses ADR-{match.group(1)}, "
+                    f"but the filename uses ADR-{filename_number}.",
+                )
+
+                if self.fix:
+                    corrected = re.sub(
+                        r"^# ADR-\d{4}\b",
+                        f"# ADR-{filename_number}",
+                        path.read_text(encoding="utf-8"),
+                        count=1,
+                    )
+                    self.write(path, corrected)
+                    title = self._first_heading(path)
+
             entries.append(f"- [{title}]({path.name})")
 
         desired = (
@@ -348,7 +378,7 @@ core specification.
             self.report.error(area, "ADR index does not match the ADR files.")
             if self.fix:
                 self.write(index, desired)
-        else:
+        elif not numbering_errors:
             self.report.ok(area, f"ADR index covers all {len(adr_files)} records.")
 
     @staticmethod

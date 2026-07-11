@@ -1,4 +1,4 @@
-# ADR-0002: Use three reference sizes
+# ADR-0003: Use three reference sizes
 
 Status: Accepted
 
