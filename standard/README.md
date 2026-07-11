@@ -1,5 +1,10 @@
 # Open Housing Standard Documents
 
+## Editorial
+
+- [OHS-000 — Editorial and Documentation Style Guide](OHS-000/README.md)
+
+
 This directory contains the normative Open Housing Standard (OHS) document series.
 
 ## Document families

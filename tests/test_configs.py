@@ -1,11 +1,12 @@
 from pathlib import Path
+
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def _configs():
-    return sorted(ROOT.glob("reference/oh*/config/house.yaml"))
+def _configs() -> list[Path]:
+    return sorted(ROOT.glob("reference-houses/oh*/config/house.yaml"))
 
 
 def test_reference_models_exist():

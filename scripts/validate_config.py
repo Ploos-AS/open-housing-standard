@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-from pathlib import Path
 import sys
+from pathlib import Path
+
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-REFERENCE = ROOT / "reference"
+REFERENCE = ROOT / "reference-houses"
 
 REQUIRED_FEATURES = [
     "universal_design",

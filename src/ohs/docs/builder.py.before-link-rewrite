@@ -1,0 +1,39 @@
+from __future__ import annotations
+import shutil
+from .paths import ProjectPaths
+from .copier import copy_file, copy_tree
+from .navigation import build as build_nav
+from .config import create as create_config, write as write_config
+from .validator import validate
+
+ROOT_FILES = {
+    "ARCHITECTURE.md": "architecture.md",
+    "ROADMAP.md": "roadmap.md",
+    "CONTRIBUTING.md": "contributing.md",
+    "CODE_OF_CONDUCT.md": "code-of-conduct.md",
+    "CHANGELOG.md": "changelog.md",
+}
+
+def build(paths: ProjectPaths) -> None:
+    if paths.generated.exists():
+        shutil.rmtree(paths.generated)
+    paths.generated.mkdir(parents=True)
+
+    copy_file(paths.root / "README.md", paths.generated / "index.md")
+    for src, dst in ROOT_FILES.items():
+        copy_file(paths.root / src, paths.generated / "project" / dst)
+
+    copy_tree(paths.root / "standard", paths.generated / "standards")
+    copy_tree(paths.root / "reference", paths.generated / "reference-houses")
+    copy_tree(paths.docs / "adr", paths.generated / "adr")
+    copy_tree(paths.docs / "project", paths.generated / "project")
+    copy_tree(paths.docs / "workflows", paths.generated / "workflows")
+    copy_tree(paths.docs / "checklists", paths.generated / "checklists")
+    copy_tree(paths.docs / "images", paths.generated / "images")
+
+    for name in ("disclaimer.md", "reference-options.md", "repository-map.md", "tech-stack.md"):
+        copy_file(paths.docs / name, paths.generated / "project" / name)
+
+    nav = build_nav(paths.generated)
+    write_config(paths.mkdocs, create_config(nav))
+    validate(paths.mkdocs, paths.generated)

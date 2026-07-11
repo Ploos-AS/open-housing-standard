@@ -1,0 +1,41 @@
+name: OHS change proposal
+description: Propose a new normative requirement or a material change
+title: "[Proposal]: "
+labels:
+  - proposal
+body:
+  - type: input
+    id: target
+    attributes:
+      label: Target document
+      placeholder: OHS-100
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: State the proposed requirement or change.
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Explain the problem and why this change is appropriate.
+    validations:
+      required: true
+
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: Explain how the requirement can be tested or reviewed.
+
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility impact
+      description: Identify possible breaking changes or migration needs.

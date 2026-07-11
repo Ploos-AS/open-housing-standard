@@ -1,0 +1,45 @@
+name: Specification issue
+description: Report ambiguity, inconsistency, or an editorial problem in an OHS specification
+title: "[Specification]: "
+labels:
+  - area:standard
+body:
+  - type: input
+    id: document
+    attributes:
+      label: Document ID and version
+      placeholder: OHS-001 v1.0.0-draft.1
+    validations:
+      required: true
+
+  - type: input
+    id: section
+    attributes:
+      label: Section
+      placeholder: 4.2
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the ambiguity, inconsistency, or editorial issue.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed resolution
+      description: Suggest revised wording or another resolution.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I checked the latest draft.
+          required: true
+        - label: I searched existing issues and discussions.
+          required: true

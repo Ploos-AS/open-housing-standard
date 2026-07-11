@@ -24,3 +24,6 @@ build/
 *.FCStd1
 
 *.egg-info/
+
+# Generated documentation staging tree
+docs/generated/
