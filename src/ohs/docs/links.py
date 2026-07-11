@@ -23,11 +23,7 @@ def normalize_relative_target(target: str) -> str:
         return target
 
     path = PurePosixPath(parsed.path)
-    normalized = "/".join(
-        slugify_component(part)
-        for part in path.parts
-        if part not in ("", ".")
-    )
+    normalized = "/".join(slugify_component(part) for part in path.parts if part not in ("", "."))
 
     if parsed.path.startswith("./"):
         normalized = f"./{normalized}"

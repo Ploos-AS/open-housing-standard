@@ -9,12 +9,8 @@ import yaml
 def create_mkdocs_config(nav: list[Any]) -> dict[str, Any]:
     return {
         "site_name": "Open Housing Standard",
-        "site_description": (
-            "Open, vendor-neutral housing standards and reference designs"
-        ),
-        "repo_url": (
-            "https://github.com/OpenHousingStandard/open-housing-standard"
-        ),
+        "site_description": ("Open, vendor-neutral housing standards and reference designs"),
+        "repo_url": ("https://github.com/OpenHousingStandard/open-housing-standard"),
         "repo_name": "OpenHousingStandard/open-housing-standard",
         "docs_dir": "docs/generated",
         "site_dir": "site",

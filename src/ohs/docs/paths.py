@@ -13,7 +13,7 @@ class ProjectPaths:
     mkdocs: Path
 
     @classmethod
-    def discover(cls, start: Path | None = None) -> "ProjectPaths":
+    def discover(cls, start: Path | None = None) -> ProjectPaths:
         current = (start or Path.cwd()).resolve()
 
         for candidate in (current, *current.parents):
@@ -26,6 +26,4 @@ class ProjectPaths:
                     mkdocs=candidate / "mkdocs.yml",
                 )
 
-        raise RuntimeError(
-            "Unable to locate repository root. Run inside the OHS repository."
-        )
+        raise RuntimeError("Unable to locate repository root. Run inside the OHS repository.")

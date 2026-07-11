@@ -6,10 +6,7 @@ def test_normalizes_relative_target() -> None:
 
 
 def test_preserves_fragment() -> None:
-    assert (
-        normalize_relative_target("OHS-001/README.md#Scope")
-        == "ohs-001/readme.md#Scope"
-    )
+    assert normalize_relative_target("OHS-001/README.md#Scope") == "ohs-001/readme.md#Scope"
 
 
 def test_preserves_external_url() -> None:
@@ -18,9 +15,10 @@ def test_preserves_external_url() -> None:
 
 
 def test_rewrites_markdown_link() -> None:
-    assert rewrite_markdown_links(
-        "[Editorial Guide](OHS-000/README.md)"
-    ) == "[Editorial Guide](ohs-000/readme.md)"
+    assert (
+        rewrite_markdown_links("[Editorial Guide](OHS-000/README.md)")
+        == "[Editorial Guide](ohs-000/readme.md)"
+    )
 
 
 def test_preserves_anchor_only_link() -> None:

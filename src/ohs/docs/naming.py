@@ -18,9 +18,8 @@ EXCLUDED_FILE_NAMES = {
 
 
 def is_excluded(path: Path) -> bool:
-    return (
-        path.name in EXCLUDED_FILE_NAMES
-        or any(part in EXCLUDED_DIR_NAMES for part in path.parts)
+    return path.name in EXCLUDED_FILE_NAMES or any(
+        part in EXCLUDED_DIR_NAMES for part in path.parts
     )
 
 

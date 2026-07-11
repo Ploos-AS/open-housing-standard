@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-from pathlib import Path
 import csv
+from pathlib import Path
+
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -18,7 +19,13 @@ def main() -> int:
         rows = [
             ["category", "item", "quantity", "unit", "notes"],
             ["area", "target_bra", data["areas"]["target_bra_m2"], "m2", "concept value"],
-            ["technical", "dry_technical_room", data["rooms"]["dry_technical_room_m2"], "m2", "required"],
+            [
+                "technical",
+                "dry_technical_room",
+                data["rooms"]["dry_technical_room_m2"],
+                "m2",
+                "required",
+            ],
             ["energy", "wood_stove", 1, "pcs", "standard"],
             ["energy", "heat_pump", 1, "pcs", "standard"],
             ["network", "structured_cabling", 1, "lot", "Cat6A or better"],

@@ -6,7 +6,6 @@ from pathlib import Path
 
 from .config import load_yaml
 
-
 REQUIRED_FEATURES = {
     "universal_design",
     "technical_room",

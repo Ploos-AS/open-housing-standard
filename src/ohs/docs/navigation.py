@@ -19,11 +19,7 @@ def markdown_files(directory: Path) -> list[Path]:
     if not directory.exists():
         return []
 
-    return sorted(
-        path
-        for path in directory.rglob("*.md")
-        if path.is_file()
-    )
+    return sorted(path for path in directory.rglob("*.md") if path.is_file())
 
 
 def section(title: str, directory: Path, generated_root: Path) -> dict[str, Any] | None:

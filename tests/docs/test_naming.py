@@ -8,6 +8,7 @@ def test_slugify_component() -> None:
 
 
 def test_normalized_relative_path() -> None:
-    assert normalized_relative_path(
-        Path("OHS-001") / "01-Introduction.md"
-    ) == Path("ohs-001") / "01-introduction.md"
+    assert (
+        normalized_relative_path(Path("OHS-001") / "01-Introduction.md")
+        == Path("ohs-001") / "01-introduction.md"
+    )
